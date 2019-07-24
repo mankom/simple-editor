@@ -1,9 +1,4 @@
-# wtf-gulp-starter
+# Simple Editor
 
-`npm install -g gulp-cli`
+editor resistant to refreshing
 
-`npm install`
-
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
