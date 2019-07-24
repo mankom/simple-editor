@@ -7,30 +7,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Simple Editor</title>
   <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Geostar+Fill&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1 class="title">
+  <header class="header">
+    <h1 class="header__title">
       Simple Editor
     </h1>
+
     <nav class="navigation">
-      <button class="navigation">
+      <button class="navigation__button">
         save
       </button>
-      <button class="navigation">
+
+      <button class="navigation__button">
         load
       </button>
-      <button class="navigation">
+
+      <button class="navigation__button">
         delete
       </button>
     </nav>
-    </header>
-    <main class="editor">
-      <textarea class="editor__text" placeholder="kliknij by pisać..."></textarea>
-    </main>
-    <script src="js/main.js">
-    </script>
+  </header>
+
+  <main class="editor">
+    <textarea class="editor__text" placeholder="kliknij by pisać..."></textarea>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
