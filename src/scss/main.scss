@@ -82,7 +82,7 @@ body {
   align-items: center;
   background: $navy-blue;
   border: 0;
-  box-shadow: 0.05em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+  box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
   color: $aquamarine;
   display: inline;
   font-family: "Geostar Fill", cursive;
@@ -90,18 +90,52 @@ body {
   height: 1.4em;  //jak ustawić wysokość grid-row?
   line-height: 0;
   width: auto;  //jak ustawić wysokość grid-row?
-
+  
+  
   &__save {
     grid-column: 1;
     margin-right: 0.8em;
+    &:hover{
+      background: rgb(92, 116, 161);
+      box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+    }
+    &--pushed{
+      color: red;
+      &:hover{
+        background: rgb(92, 116, 161);
+        box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
+      }
+    }
   }
   &__load {
     grid-column: 2;
     margin-left: 0.4em;
     margin-right: 0.4em;
+    &:hover{
+      background: rgb(92, 116, 161);
+      box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+    }
+    &--pushed{
+      color: red;
+      &:hover{
+        background: rgb(92, 116, 161);
+        box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
+      }
+    }
   }
   &__delete {
     grid-column: 3;
     margin-left: 0.8em;
+    &:hover{
+      background: rgb(92, 116, 161);
+      box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+    }
+    &--pushed{
+      color: red;
+      &:hover{
+        background: rgb(92, 116, 161);
+        box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
+      }
+    }
   }
 }

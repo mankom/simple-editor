@@ -1,7 +1,8 @@
-const editedText = document.querySelector('.editor__text--js');
-const saveButton = document.querySelector('.button__save--js');
-const loadButton = document.querySelector('.button__load--js');
 const deleteButton = document.querySelector('.button__delete--js');
+const editedText = document.querySelector('.editor__text--js');
+const loadButton = document.querySelector('.button__load--js');
+const saveButton = document.querySelector('.button__save--js');
+
 
 //  odzyskiwanie po refreshu pisanego tekstu
 if(sessionStorage.getItem('sessionText')){
@@ -35,4 +36,41 @@ deleteButton.addEventListener('click', (e)=>{
   localStorage.removeItem('savedText');
   editedText.value = null;
   console.log("usunięte zostały zapisy sessionStorage i localStorage, oraz wyczyszczono obszar edycji tekstu")
+})
+
+//buttony świecenie podczas wciśnięcia
+saveButton.addEventListener('mousedown', (e)=>{
+    saveButton.classList.add('button__save--pushed');
+})
+saveButton.addEventListener('mouseup', (e)=>{
+  saveButton.classList.remove('button__save--pushed');
+})
+saveButton.addEventListener('mouseout', (e)=>{
+  if(saveButton.classList.contains('button__save--pushed')){
+    saveButton.classList.remove('button__save--pushed');
+  }
+})
+
+loadButton.addEventListener('mousedown', (e)=>{
+  loadButton.classList.add('button__load--pushed');
+})
+loadButton.addEventListener('mouseup', (e)=>{
+  loadButton.classList.remove('button__load--pushed');
+})
+loadButton.addEventListener('mouseout', (e)=>{
+if(loadButton.classList.contains('button__load--pushed')){
+  loadButton.classList.remove('button__load--pushed');
+}
+})
+
+deleteButton.addEventListener('mousedown', (e)=>{
+  deleteButton.classList.add('button__delete--pushed');
+})
+deleteButton.addEventListener('mouseup', (e)=>{
+  deleteButton.classList.remove('button__delete--pushed');
+})
+deleteButton.addEventListener('mouseout', (e)=>{
+if(deleteButton.classList.contains('button__delete--pushed')){
+  deleteButton.classList.remove('button__delete--pushed');
+}
 })
