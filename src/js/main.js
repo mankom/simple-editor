@@ -40,37 +40,53 @@ deleteButton.addEventListener('click', (e)=>{
 
 //buttony świecenie podczas wciśnięcia
 saveButton.addEventListener('mousedown', (e)=>{
-    saveButton.classList.add('button__save--pushed');
+    saveButton.classList.add('button__save--pushed-js');
 })
 saveButton.addEventListener('mouseup', (e)=>{
-  saveButton.classList.remove('button__save--pushed');
+  saveButton.classList.remove('button__save--pushed-js');
 })
 saveButton.addEventListener('mouseout', (e)=>{
-  if(saveButton.classList.contains('button__save--pushed')){
-    saveButton.classList.remove('button__save--pushed');
+  if(saveButton.classList.contains('button__save--pushed-js')){
+    saveButton.classList.remove('button__save--pushed-js');
   }
 })
 
 loadButton.addEventListener('mousedown', (e)=>{
-  loadButton.classList.add('button__load--pushed');
+  loadButton.classList.add('button__load--pushed-js');
 })
 loadButton.addEventListener('mouseup', (e)=>{
-  loadButton.classList.remove('button__load--pushed');
+  loadButton.classList.remove('button__load--pushed-js');
 })
 loadButton.addEventListener('mouseout', (e)=>{
-if(loadButton.classList.contains('button__load--pushed')){
-  loadButton.classList.remove('button__load--pushed');
+if(loadButton.classList.contains('button__load--pushed-js')){
+  loadButton.classList.remove('button__load--pushed-js');
 }
 })
 
 deleteButton.addEventListener('mousedown', (e)=>{
-  deleteButton.classList.add('button__delete--pushed');
+  deleteButton.classList.add('button__delete--pushed-js');
 })
 deleteButton.addEventListener('mouseup', (e)=>{
-  deleteButton.classList.remove('button__delete--pushed');
+  deleteButton.classList.remove('button__delete--pushed-js');
 })
 deleteButton.addEventListener('mouseout', (e)=>{
-if(deleteButton.classList.contains('button__delete--pushed')){
-  deleteButton.classList.remove('button__delete--pushed');
+if(deleteButton.classList.contains('button__delete--pushed-js')){
+  deleteButton.classList.remove('button__delete--pushed-js');
 }
 })
+
+
+
+//Kod do pojawiającego się i znikającego menu, hamburger menu.
+/*const navigationSwitcher = document.querySelector(".navigation__switcher--js");
+
+navigationSwitcher.addEventListener('click', (e)=>{
+  const navigationList = document.querySelector(".navigation__list--js");
+  navigationList.classList.toggle('navigation__list--visible');
+  if(navigationList.classList.contains('navigation__list--visible')){
+    navigationSwitcher.innerHTML = 'X';
+  }else{
+    navigationSwitcher.innerHTML = '&#x2261';
+  }
+})*/
+
