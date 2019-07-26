@@ -6,21 +6,25 @@ const deleteButton = document.querySelector('.button__delete--js');
 //  odzyskiwanie po refreshu pisanego tekstu
 if(sessionStorage.getItem('sessionText')){
   editedText.value = sessionStorage.getItem('sessionText');
+  console.log("po refresh został przywrócony pisany tekst: " + editedText.value);
 }
 
 //  zapamiętywanie pisanego tekstu w sessionStorage
 editedText.addEventListener('keyup', (e)=>{
   sessionStorage.setItem('sessionText', e.target.value);
+  console.log("sessionStorage zapamiętał: " + sessionStorage.getItem('sessionText'));
 })
 
 //  zapamiętywanie napisanego tekstu w localStorage
 saveButton.addEventListener('click', (e)=>{
   localStorage.setItem('savedText', editedText.value);
+  console.log("localStorage zapamiętał: " + localStorage.getItem('savedText'));
 })
 //  wczytanie zapamiętanego tekstu z localStorage
 loadButton.addEventListener('click', (e)=>{
   if(localStorage.getItem('savedText')){
     editedText.value = localStorage.getItem('savedText');
+    console.log("z localStorage wczytano: " + editedText.value);
   }
 })
 
@@ -30,4 +34,5 @@ deleteButton.addEventListener('click', (e)=>{
   sessionStorage.removeItem('sessionText');
   localStorage.removeItem('savedText');
   editedText.value = null;
+  console.log("usunięte zostały zapisy sessionStorage i localStorage, oraz wyczyszczono obszar edycji tekstu")
 })
