@@ -75,7 +75,41 @@ if(deleteButton.classList.contains('button__delete--pushed-js')){
 }
 })
 
+const menuSwitcher = document.querySelector(".menu__switcher--js")
+menuSwitcher.addEventListener('click', (e)=>{
+  const menuButtons = document.querySelector(".menu__buttons--js");
+  menuButtons.classList.toggle('menu__buttons--visible');
+  if(menuButtons.classList.contains('menu__buttons--visible')){
+    menuSwitcher.innerHTML = 'X';
+  }else{
+    menuSwitcher.innerHTML = '&#x2261';
+  }
+})
 
+const menuSave = document.querySelector(".menu__save--js");
+menuSave.addEventListener('click', (e)=>{
+  localStorage.setItem('savedText', editedText.value);
+  console.log("localStorage zapamiętał: " + localStorage.getItem('savedText'));
+})
+
+//  wczytanie zapamiętanego tekstu z localStorage
+const menuLoad = document.querySelector(".menu__load--js");
+menuLoad.addEventListener('click', (e)=>{
+  if(localStorage.getItem('savedText')){
+    editedText.value = localStorage.getItem('savedText');
+    console.log("z localStorage wczytano: " + editedText.value);
+  }
+})
+
+//  usunięcie zapamiętanego tekstu w localStorege i sessionStorage, 
+//  oraz wyczyszczenie okna textarea
+const menuDelete = document.querySelector(".menu__delete--js");
+menuDelete.addEventListener('click', (e)=>{
+  sessionStorage.removeItem('sessionText');
+  localStorage.removeItem('savedText');
+  editedText.value = null;
+  console.log("usunięte zostały zapisy sessionStorage i localStorage, oraz wyczyszczono obszar edycji tekstu")
+})
 
 //Kod do pojawiającego się i znikającego menu, hamburger menu.
 /*const navigationSwitcher = document.querySelector(".navigation__switcher--js");

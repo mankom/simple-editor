@@ -8,24 +8,35 @@
   <title>Simple Editor</title>
   <link rel="stylesheet" href="css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Geostar+Fill&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <nav class="menu">
-      <button class="menu__switcher menu__switcher--js">&#x2261;</button>
-
-      <button class="menu__save menu__save--js">
-        save
+      <button class="menu__switcher menu__switcher--js">
+        &#x2261;
       </button>
 
-      <button class="menu__load menu__load--js">
-        load
-      </button>
+      <ul class="menu__buttons menu__buttons--js">
+        <li class="menu__item">
+          <button class="menu__button menu__save menu__save--js">
+            save
+          </button>
+        </li>
 
-      <button class="menu__delete menu__delete--js">
-        delete
-      </button>
+        <li class="menu__item">
+          <button class="menu__button menu__load menu__load--js">
+            load
+          </button>
+        </li>
+
+        <li class="menu__item">
+          <button class="menu__button menu__delete menu__delete--js">
+            delete
+          </button>
+        </li>
+      </ul>
     </nav>
 
     <h1 class="header__title">
