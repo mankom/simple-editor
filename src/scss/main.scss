@@ -1,6 +1,8 @@
 @import "_normalize";
 @import "_variables";
 
+
+
 :root {
   font-size: 1em;
   height: auto;
@@ -30,6 +32,7 @@ body {
   height: 100vh;
   width: auto;
   min-height: 100%;
+  
   @media (max-width: $mobile){
     grid-template-columns: 1fr;
     grid-template-rows: 10.5em 1fr;
@@ -47,13 +50,19 @@ body {
   line-height: 1;
   width: 30%;
   &__save {
+    color: $aquamarine;
+    background: $navy-blue;
+    box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+    transition: background .3s ease-out, box-shadow .3s ease-out;
     &:hover{
       background: rgb(92, 116, 161);
       box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
     }
     &--pushed-js{
-      color: red;
+      box-shadow:0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+      transition: background .5s cubic-bezier(0, 0.93, 1, 1), box-shadow .5s cubic-bezier(0, 0.93, 1, 1), color .5s cubic-bezier(0, 0.93, 1, 1);
       &:hover{
+        color:red;
         background: rgb(92, 116, 161);
         box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
       }
@@ -61,13 +70,19 @@ body {
   }
 
   &__load {
+    color: $aquamarine;
+    background: $navy-blue;
+    box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+    transition: background .3s ease-out, box-shadow .3s ease-out;
     &:hover{
       background: rgb(92, 116, 161);
       box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
     }
     &--pushed-js{
-      color: red;
+      box-shadow:0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+      transition: background .5s cubic-bezier(0, 0.93, 1, 1), box-shadow .5s cubic-bezier(0, 0.93, 1, 1), color .5s cubic-bezier(0, 0.93, 1, 1);
       &:hover{
+        color:red;
         background: rgb(92, 116, 161);
         box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
       }
@@ -75,13 +90,19 @@ body {
   }
 
   &__delete {
+    color: $aquamarine;
+    background: $navy-blue;
+    box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+    transition: background .3s ease-out, box-shadow .3s ease-out;
     &:hover{
       background: rgb(92, 116, 161);
       box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
     }
     &--pushed-js{
-      color: red;
+      box-shadow:0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+      transition: background .5s cubic-bezier(0, 0.93, 1, 1), box-shadow .5s cubic-bezier(0, 0.93, 1, 1), color .5s cubic-bezier(0, 0.93, 1, 1);
       &:hover{
+        color:red;
         background: rgb(92, 116, 161);
         box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
       }
