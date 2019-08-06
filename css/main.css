@@ -346,36 +346,87 @@ body {
   font-size: 1em;
   line-height: 1;
   width: 30%; }
-  .button__save:hover {
-    background: #5c74a1;
-    -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
-            box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75); }
-  .button__save--pushed-js {
-    color: red; }
-    .button__save--pushed-js:hover {
+  .button__save {
+    color: #0FF4C6;
+    background: #4C6085;
+    -webkit-box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+            box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+    -webkit-transition: background .3s ease-out, -webkit-box-shadow .3s ease-out;
+    transition: background .3s ease-out, -webkit-box-shadow .3s ease-out;
+    -o-transition: background .3s ease-out, box-shadow .3s ease-out;
+    transition: background .3s ease-out, box-shadow .3s ease-out;
+    transition: background .3s ease-out, box-shadow .3s ease-out, -webkit-box-shadow .3s ease-out; }
+    .button__save:hover {
       background: #5c74a1;
-      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
-              box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75); }
-  .button__load:hover {
-    background: #5c74a1;
-    -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
-            box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75); }
-  .button__load--pushed-js {
-    color: red; }
-    .button__load--pushed-js:hover {
+      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+              box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75); }
+    .button__save--pushed-js {
+      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+              box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+      -webkit-transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1);
+      -o-transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1); }
+      .button__save--pushed-js:hover {
+        color: red;
+        background: #5c74a1;
+        -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
+                box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75); }
+  .button__load {
+    color: #0FF4C6;
+    background: #4C6085;
+    -webkit-box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+            box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+    -webkit-transition: background .3s ease-out, -webkit-box-shadow .3s ease-out;
+    transition: background .3s ease-out, -webkit-box-shadow .3s ease-out;
+    -o-transition: background .3s ease-out, box-shadow .3s ease-out;
+    transition: background .3s ease-out, box-shadow .3s ease-out;
+    transition: background .3s ease-out, box-shadow .3s ease-out, -webkit-box-shadow .3s ease-out; }
+    .button__load:hover {
       background: #5c74a1;
-      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
-              box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75); }
-  .button__delete:hover {
-    background: #5c74a1;
-    -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
-            box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75); }
-  .button__delete--pushed-js {
-    color: red; }
-    .button__delete--pushed-js:hover {
+      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+              box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75); }
+    .button__load--pushed-js {
+      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+              box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+      -webkit-transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1);
+      -o-transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1); }
+      .button__load--pushed-js:hover {
+        color: red;
+        background: #5c74a1;
+        -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
+                box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75); }
+  .button__delete {
+    color: #0FF4C6;
+    background: #4C6085;
+    -webkit-box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+            box-shadow: 0.1em 0.1em 0.1em rgba(15, 244, 198, 0.25);
+    -webkit-transition: background .3s ease-out, -webkit-box-shadow .3s ease-out;
+    transition: background .3s ease-out, -webkit-box-shadow .3s ease-out;
+    -o-transition: background .3s ease-out, box-shadow .3s ease-out;
+    transition: background .3s ease-out, box-shadow .3s ease-out;
+    transition: background .3s ease-out, box-shadow .3s ease-out, -webkit-box-shadow .3s ease-out; }
+    .button__delete:hover {
       background: #5c74a1;
-      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
-              box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75); }
+      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+              box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75); }
+    .button__delete--pushed-js {
+      -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+              box-shadow: 0.15em 0.1em 0.1em rgba(15, 244, 198, 0.75);
+      -webkit-transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1);
+      -o-transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1);
+      transition: background 0.5s cubic-bezier(0, 0.93, 1, 1), box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1), color 0.5s cubic-bezier(0, 0.93, 1, 1), -webkit-box-shadow 0.5s cubic-bezier(0, 0.93, 1, 1); }
+      .button__delete--pushed-js:hover {
+        color: red;
+        background: #5c74a1;
+        -webkit-box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75);
+                box-shadow: 0.15em 0.1em 0.1em rgba(255, 0, 0, 0.75); }
   @media (max-width: 600px) {
     .button {
       display: none; } }
